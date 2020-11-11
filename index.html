@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess</title>
+    <style type="text/css">
+        BODY {
+            background-color: bisque;
+        }
+        TABLE {
+            border: 0;
+            border-collapse: collapse; /* Убираем двойные линии между ячейками */
+        }
+        TD {
+            text-align: center;
+            border: 1px solid grey; /* Параметры рамки */
+            width: 40px;
+            height: 40px;
+        }
+        TR:nth-child(1) td {
+            border: 0;
+        }
+        TD:nth-child(1) {
+            border: 0;
+        }
+        .black-cell {
+            background-color: #404040;
+        }
+        .white-cell {
+            background-color: #BCBCBC;
+        }
+        .black-figure {
+            color: black;
+            font-weight: bold;
+        }
+        .white-figure {
+            color: white;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Chess board</h1>
+<div id="content"></div>
+<script src="chess.js"></script>
+</body>
+</html>
